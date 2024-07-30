@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/avatar.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="sciprt.js" defer></script>
+    <title>Victória Miranda | Portfólio</title>
 </head>
 <body>
-    <h1>Testando minha primeira commit de site - Não funcionou</h1>
+    <header id="home">
+        <nav>
+            <ul id="ulHeader">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li id="contactMe"><a href="#cntt">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="personal" id="personal">
+            <img id="Avatar" src="imagens/avatar.png" alt="Victória Miranda's Avatar">
+            <h1>Victória Miranda</h1>
+            <p>Dev Júnior</p>
+        </div>
+    </header>
+    <div class="social-media">
+        <div></div>
+    </div>
+    <div id="about" class="WhoAmI">
+        <img src="imagens/avatarBig.png" alt="Victória Miranda's Avatar">
+        <div class="aboutMe">
+            <h2>Quem é tu, mana?</h2>
+            <p>Eu sou a Victória Miranda, uma dev Júnior que gosta muuito de programação Front-end, no entanto isso não significa que eu não desenvolva para Back-End também - até porque, uma coisa não tem nada a ver com a outra.</p>
+            <p>Eu gosto muito de animes e da cultura japonesa, então boa parte dos meus trabalhos individuais têm alguma característica japonesa, seja uma palavra, significado, modelo ou qualquer outra coisa.</p>
+            <p>Além de desenvolver Apps mobile, eu também desenvolvo muitos sites e lading pages, mas não tenho o costume de publicar - Tá na hr de começar!!. Apesar disso, há alguns projetinhos meus rodando por aí e alguns deles estão logo abaixo.</p>
+        </div>
+    </div>
+    <div class="social-media">
+        <div></div>
+    </div>
+    <div class="geral">
+        <div id="services" class="did">
+            <div class="services">
+                <h2>Services</h2>
+            </div>
+            <div class="work">
+                <div class="workItem">
+                    <img src="imagens/logo-page.png" alt="Web Design">
+                    <div class="RightText">
+                        <h3>Landing Page</h3>
+                        <p>Desenvolvi uma landing page para uma Cardiologista. O site foi desenvolvido em 2023, com as tecnologias:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a id="saibaMais" href="https://nayracortezcardiologista.com/" target="_blank">Visite o site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="geral">
+        <div id="cntt">
+                <h2>Contact</h2>
+            <div id="Cntt">
+                <div class="dados">
+                    <div class="txt">
+                        <h2>Oi, tudo bem?</h2>
+                        <p>Você ficou interessado no que eu faço? Incrível, mande-me uma mensagem para podermos conversar. Nem precisa abrir seu e-mail ou Whatsapp, você pode me chamar pela caixinha ao lado.</p>
+                    </div>
+                    <div class="info">
+                        <img src="imagens/whatsapp.png" alt="">
+                        <p>(92) 9 9378-4281</p>
+                    </div>
+                    <div class="info">
+                        <img src="imagens/email.png" alt="">
+                        <p>mvictoriayasmim@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <img src="imagens/location.png" alt="">
+                        <p>Manaus | Am - São José Operário, Rua Castanho, n° 75</p>
+                    </div>
+                </div>
+                <div class="Form">
+                    <form id="Form" onsubmit="return msg(event)">
+                        <input type="text" id="name" placeholder="Nome">
+                        <input type="email" id="email" placeholder="E-mail">
+                        <textarea id="message" placeholder="Mensagem"></textarea>
+                        <input type="submit" value="Enviar"/>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                    <img id="img" src="imagens/avatar.png" alt="">
+                <p>Copyright by Victória Miranda | 2024</p>
+                <div class="redes">
+                    <a href="https://www.instagram.com/mvictoriayasmim/" target="_blank"><img src="imagens/insta.png" alt="icon Instagram"></a>
+                    <a href="https://www.facebook.com/victoria.miranda.1865904/" target="_blank"><img src="imagens/face.png" alt="Icon Facebook"></a>
+                    <a href="https://www.linkedin.com/in/vict%C3%B3ria-miranda-maciel/" target="_blank"><img src="imagens/link.png" alt="Icon Likedin"></a>
+                </div>
+        </div>
+    </div>
+    <div class="back">
+        <a href="#home">
+            <i class='bx bxs-chevron-up' style='color:#fff'></i>
+        </a>
+    </div>
 </body>
 </html>
+
+<!--
+    <div class="workItem">
+        <img src="imagens/avatar.png" alt="Web Design">
+        <h3>Mobile App</h3>
+        <p>Programei o TDAH Connect, um aplicativo que auxilia pais e responsáveis de crianças com TDAH, entre 2023 e 2024, com as tecnologias:</p>
+        <ul>
+            <li>React Native</li>
+            <li>JavaScript</li>
+            <li>MongoDB Atlas</li>
+        </ul>
+        <a id="saibaMais" href="">Saiba mais sobre o projeto</a>
+    </div>
+-->
