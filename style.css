@@ -410,21 +410,52 @@ body a:hover{
         animation: fall 14s linear infinite;
         z-index: 1;
     }
+    .personal{
+        width: 50%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        z-index: 5;
+    }
+    .personal h1{
+        color: brown;
+        font-size: 16px;
+        margin-top: 10%;
+    }
+    .personal p{
+        color: antiquewhite;
+        font-size: 14px;
+    }
+    #Avatar{
+        width: 100%;
+        height: auto;
+        background-color: antiquewhite;
+        border-radius: 50%;
+    }
+    #contactMe{
+        background-color: brown;
+    }  
+    #contactMe:hover{
+        background-color: rgba(165, 42, 42, 0.628);
+        color: #faebd7;
+        transform: scale(1.1);
+    }
     /*About Me*/
     .WhoAmI {
-        background-color: #7d1010;
         display: flex;
         flex-direction: column;
         font-size: 12px;
-        text-rendering: optimizeSpeed;
         padding-top: 5%;
         padding-bottom: 5%;
     }
     .aboutMe{
-        width: 70%;
+        margin-top: 2%;
+        width: 80%;
         align-items: start;
         align-self: flex-start;
-        margin-left: 5%;
     }
     .WhoAmI img{
         height: 50%;
@@ -434,12 +465,17 @@ body a:hover{
         clip-path: margin-box;
         align-self: center;
     }
+    .WhoAmI2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     .social-media{
         background-color: rgba(102, 21, 21, 0.628);
         align-self: flex-end;
         position: absolute;
-        margin-top: -1.5%;
-        height: 2%;
+        margin-top: -2%;
+        height: 2.5%;
         width: 100%;
     }
     /*Footer*/
@@ -556,6 +592,50 @@ body a:hover{
         font-size: 12px;
     }
     /*Skills*/
+    /*Services*/
+    .work{
+        text-align: justify;
+        font-size: 14px;
+        display: flex;
+    }
+    .workItem{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 3%;
+        border-width: 1px;
+        border-radius: 2%;
+        border-style: solid;
+        border-color: #7d1010;
+        background-color: #7d10104f;
+        font-size: 12px;
+        flex-direction: column;
+    }
+    .workItem img{
+        border-radius: 2%;
+        width: 90%;
+        background-color: #7c1a1a;
+    }
+    .workItem ul{
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        width: 90%;
+        align-self: center;
+        margin-left: 5%;
+    }
+    .workItem li{
+        list-style-type: disc;
+    }
+    .RightText{
+        margin-top: 2%;
+        width: 90%;
+    }
+    #saibaMais{
+        width: auto;
+        padding: 2%;
+        font-size: 14px;
+    }
     .back{
         position: fixed;
         bottom: 3%;
