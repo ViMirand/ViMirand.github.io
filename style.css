@@ -102,6 +102,10 @@ div button:hover{
 .aboutMe{
     width: 40%;
 }
+.aboutMe a{
+    color:rgb(252, 193, 184);
+    font-size: 12px;
+}
 .WhoAmI2 {
     background-color: #a52a2a;
     display: flex;
@@ -173,19 +177,24 @@ div button:hover{
     font-family: 'Comfortaa', sans-serif;
     align-self: center;
     border-radius: 1vh;
-}#Form textarea{
+}
+#Form input::placeholder, textarea::placeholder{
+    color: #faebd7d7;
+    font-family: 'Comfortaa', sans-serif;
+}
+#Form textarea{
     height: 90px;
 }
-#Form button{
-    background-color: rgb(211, 23, 80) ;
-    width: 30%;
+.button{
+    background-color: rgba(255, 0, 72, 0.558);
+    width: 90%;
     height: 30px;
     margin: 1%;
     padding: 1%;
-    color: antiquewhite;
+    color: #faebd7;
     font-family: 'Comfortaa', sans-serif;
-    border-radius: 20vh;
     align-self: center;
+    border-radius: 1vh;
 }
 
 .item {
@@ -579,17 +588,16 @@ body a:hover{
         height: 50px;
         font-size: 12px;
     }
-    #Form button{
-        background-color: rgb(211, 23, 80) ;
-        width: 30%;
-        height: 20px;
+    .button{
+        background-color: rgba(255, 0, 72, 0.558);
+        width: 90%;
+        height: 25px;
         margin: 1%;
-        padding: 1%;
-        color: antiquewhite;
-        font-family: 'Comfortaa', sans-serif;
-        border-radius: 20vh;
-        align-self: center;
         font-size: 12px;
+        color: #faebd7;
+        font-family: 'Comfortaa', sans-serif;
+        align-self: center;
+        border-radius: 1vh;
     }
     /*Skills*/
     /*Services*/
@@ -651,8 +659,8 @@ body a:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
     .footer p{
         font-size: 8px;
