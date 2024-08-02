@@ -634,7 +634,13 @@ body a:hover{
     #saibaMais{
         width: auto;
         padding: 2%;
-        font-size: 14px;
+        font-size: 12px;
+        background-color: #ffffffd2;
+        border-radius: 5px;
+        position: relative;
+        right: 5%;
+        border-bottom-style: none;
+        color: #7c1a1a;
     }
     .back{
         position: fixed;
@@ -647,5 +653,8 @@ body a:hover{
         align-items: center;
         width: 20px;
         height: 20px;
+    }
+    .footer p{
+        font-size: 8px;
     }
 }
