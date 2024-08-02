@@ -635,12 +635,12 @@ body a:hover{
         width: auto;
         padding: 2%;
         font-size: 12px;
-        background-color: #ffffffd2;
+        background-color: #7d1010;
         border-radius: 5px;
         position: relative;
         right: 5%;
         border-bottom-style: none;
-        color: #7c1a1a;
+        color: #ffffff;
     }
     .back{
         position: fixed;
