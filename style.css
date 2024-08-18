@@ -307,7 +307,7 @@ div button:hover{
     font-size: 14px;
 }
 .workItem{
-    width: 100%;
+    width: 93.5%;
     height: 100%;
     padding: 3%;
     border-width: 1px;
@@ -315,14 +315,18 @@ div button:hover{
     border-style: solid;
     border-color: #7d1010;
     background-color: #7d10104f;
-    font-size: 12px;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
 }
+
+.workItem p{
+    margin-top: 2%;
+}
 .workItem img{
-    border-radius: 50%;
-    height: 60%;
+    width: 100%;
     height: auto;
+    background-color: #7d1010;
 }
 .workItem ul{
     display: flex;
@@ -330,25 +334,48 @@ div button:hover{
     align-items: self-start;
     width: 90%;
     align-self: center;
+    margin-left: 5%;
 }
 .workItem li{
     list-style-type: disc;
 }
+.containerItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.containerItem img{
+    height: 100%;
+    width: 90%;
+    align-self: center;
+    position: absolute;
+    margin-left: 5%;
+}
+.swiper-wrapper{
+    height: auto;
+    align-items: center;
+}
+.swiper{
+    width: 65%;
+}
+.swiper-wrapper .swiper-pagination-bullet{
+    background: #7c1a1a;
+}
 .workItem a{
     width: auto;
     font-family: 'Comfortaa', sans-serif;
-    padding: 0.2%;
-    border-bottom-width: 2px;
-    border-bottom-style: dotted;
-    border-bottom-color: #ffffff;
+    padding: 0.5%;
     align-self: flex-end;
     right: 10%;
-    color: brown;
+    background-color: #7d1010;
+    border-radius: 5px;
+    color: #faebd7;
     position: absolute;
 }
 .RightText{
     padding: 2%;
     width: 30%;
+    height: 300px;
 }
 .back{
     position: fixed;
@@ -362,6 +389,7 @@ div button:hover{
     width: 30px;
     height: 30px;
 }
+
 body a:hover{
     transform: scale(1.1);
 }

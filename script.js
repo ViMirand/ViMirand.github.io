@@ -43,37 +43,20 @@ setTimeout(() => {
 // Criar itens a cada 1 segundo
 setInterval(createFallingItem, 100);
 
-// Substitua YOUR_PUBLIC_KEY pela sua chave pública
 
-console.log('Script carregado');
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
-// Inicialize o EmailJS com sua chave pública
-emailjs.init("KY8NUkwrhxS9AhzyO");
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
-function msg(event) {
-    event.preventDefault(); // Previne o envio padrão do formulário
-
-    const email = document.getElementById('email').value;
-    const name = document.getElementById('name').value;
-    const message = document.getElementById('message').value;
-
-    console.log('Email:', email);
-    console.log('Name:', name);
-    console.log('Message:', message);
-
-    // Envie o e-mail usando EmailJS
-    emailjs.send('service_rbzqonk', 'template_63ue429', {
-        from_name: name,
-        from_email: email,
-        message_html: message
-    })
-    .then(function(response) {
-        console.log('Sucesso:', response);
-        alert('Formulário enviado com sucesso!!');
-    }, function(error) {
-        console.error('Erro:', error);
-        alert('Falha ao enviar o e-mail.');
-    });
-
-    return false;
-}
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
