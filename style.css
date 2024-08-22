@@ -101,16 +101,24 @@ div button:hover{
 }
 .aboutMe{
     width: 40%;
+    font-size: 18px;
 }
 .aboutMe a{
     color:rgb(252, 193, 184);
-    font-size: 15px;
+    font-size: 18px;
 }
 .WhoAmI2 {
     background-color: #a52a2a;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.WhoAmI2 img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5%;
+    width: 25%;
 }
 
 /*Skills*/
@@ -514,6 +522,12 @@ body a:hover{
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+    .WhoAmI2 img{
+        width: 50%;
+        height: auto;
+        margin-bottom: 25%;
+        left: 0;
     }
     .social-media{
         background-color: rgba(102, 21, 21, 0.628);
