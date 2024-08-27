@@ -76,6 +76,7 @@ a{
 
 div button:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 .social-media{
     background-color: rgba(102, 21, 21, 0.628);
@@ -656,7 +657,6 @@ body a:hover{
         display: flex;
     }
     .workItem{
-        width: 100%;
         height: 100%;
         align-items: center;
         padding: 3%;
@@ -667,11 +667,6 @@ body a:hover{
         background-color: #7d10104f;
         font-size: 12px;
         flex-direction: column;
-    }
-    .workItem img{
-        border-radius: 2%;
-        width: 90%;
-        background-color: #7c1a1a;
     }
     .workItem ul{
         display: flex;
@@ -687,6 +682,7 @@ body a:hover{
     .RightText{
         margin-top: 2%;
         width: 90%;
+        height: auto;
     }
     #saibaMais{
         width: auto;
@@ -713,5 +709,26 @@ body a:hover{
     }
     .footer p{
         font-size: 8px;
+    }
+
+    /*Swipper*/
+    .workItem{
+        width: 95%;
+    }
+    .workItem img{
+        width: 50%;
+        height: 200px;
+    }
+    .scroll{
+        height: 150px;
+        width: 100%;
+    }
+    .containerItem{
+        width: 100%;
+    }
+    .containerItem img{
+        margin-left: 7%;
+        width: 86%;
+        height: auto;
     }
 }

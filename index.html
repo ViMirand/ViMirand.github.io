@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link do Swiper CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    
+    <script defer src="app.js"></script>
     <title>Victória Miranda | Portfólio</title>
 </head>
 <body>
@@ -53,7 +53,7 @@
             </div>
             <div class="work">
                 <div class="workItem">
-                    <div class="swiper">
+                    <div class="swiper scroll">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -100,7 +100,7 @@
                 <div class="dados">
                     <div class="txt">
                         <h2>Oi, tudo bem?</h2>
-                        <p>Você ficou interessado no que eu faço? Incrível, mande-me uma mensagem para podermos conversar. Nem precisa abrir seu e-mail ou Whatsapp, você pode me chamar pela caixinha ao lado.</p>
+                        <p>Você ficou interessado no que eu faço? Incrível, mande-me uma mensagem para podermos conversar. Nem precisa abrir seu e-mail ou Whatsapp, você pode me chamar pela caixinha.</p>
                     </div>
                     <div class="info">
                         <img src="imagens/whatsapp.png" alt="">
@@ -108,19 +108,17 @@
                     </div>
                     <div class="info">
                         <img src="imagens/email.png" alt="">
-                        <p>mvictoriayasmim@gmail.com</p>
-                    </div>
-                    <div class="info">
-                        <img src="imagens/location.png" alt="">
-                        <p>Manaus | Am - São José Operário, Rua Castanho, n° 75</p>
+                        <p>dev.victoriamiranda@gmail.com</p>
                     </div>
                 </div>
                 <div class="Form">
-                    <form id="Form" onsubmit="return msg(event)">
-                        <input type="text" id="name" placeholder="Nome">
-                        <input type="email" id="email" placeholder="E-mail">
-                        <textarea id="message" placeholder="Mensagem"></textarea>
-                        <button class="button" type="submit">Enviar</button>
+                    <form id="Form" action="https://formsubmit.co/7d933492977783a83d227ec886733ae6"
+                    method="POST"
+                    data-form>
+                        <input type="text" id="name" name="name" placeholder="Nome" required>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        <input id="message" name="message" for="mensagem" placeholder="Mensagem"></input>
+                        <button class="button" data-button >Enviar</button>
                     </form>
                 </div>
             </div>
